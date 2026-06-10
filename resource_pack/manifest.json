@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "AutoNPC PlayerAI v2.0 RP",
+    "description": "v2.0 Resource pack for modular AutoNPC PlayerAI.",
+    "uuid": "ed9b46f3-a9b9-4aaf-921b-dde41681c011",
+    "version": [
+      2,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      70
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "daace127-4e49-4a6b-a1b0-4dbe813cf14a",
+      "version": [
+        2,
+        0,
+        0
+      ]
+    }
+  ]
+}

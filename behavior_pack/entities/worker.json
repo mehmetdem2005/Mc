@@ -1,0 +1,50 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "autonpcv20:worker",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["autonpc_worker", "mob"] },
+      "minecraft:health": { "value": 40, "max": 40 },
+      "minecraft:collision_box": { "width": 0.6, "height": 1.8 },
+      "minecraft:movement": { "value": 0.32 },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "avoid_damage_blocks": true,
+        "can_open_doors": true,
+        "can_pass_doors": true,
+        "avoid_water": true
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
+      "minecraft:persistent": {},
+      "minecraft:nameable": { "always_show": true, "allow_name_tag_renaming": false },
+      "minecraft:behavior.float": { "priority": 0 },
+      "minecraft:behavior.random_stroll": { "priority": 7, "speed_multiplier": 0.75, "xz_dist": 10, "y_dist": 3, "interval": 60 },
+      "minecraft:behavior.look_at_player": { "priority": 8, "look_distance": 8, "probability": 0.05 },
+      "minecraft:behavior.random_look_around": { "priority": 9 },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "filters": { "test": "is_sneaking", "subject": "other", "value": false },
+            "interact_text": "Görev Paneli Aç",
+            "on_interact": { "event": "autonpcv20:panel", "target": "self" }
+          },
+          {
+            "filters": { "test": "is_sneaking", "subject": "other", "value": true },
+            "interact_text": "Aç",
+            "on_interact": { "event": "autonpcv20:panel", "target": "self" }
+          }
+        ]
+      }
+    },
+    "events": { "autonpcv20:panel": {} }
+  }
+}
