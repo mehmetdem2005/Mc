@@ -1,0 +1,58 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "AutoNPC PlayerAI v2.0 BP",
+    "description": "v2.0 Modular fix: separated files, robust guide book fallback, panel-first interaction, player-like movement/task core.",
+    "uuid": "221d7a02-0dc0-4948-a18a-86a985c5d851",
+    "version": [
+      2,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      70
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "350cac98-ce52-4acb-84d8-88057128d8cf",
+      "version": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "5a8e2119-76a4-4429-be13-6b3697720f11",
+      "version": [
+        2,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "ed9b46f3-a9b9-4aaf-921b-dde41681c011",
+      "version": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ]
+}

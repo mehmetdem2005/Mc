@@ -1,0 +1,1 @@
+scriptevent autonpcv20:give_book

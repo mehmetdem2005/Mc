@@ -1,0 +1,15 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node/build/cache
+node_modules/
+dist/
+build/
+*.log
+
+# Minecraft temporary imports/backups
+*.bak
+*.tmp

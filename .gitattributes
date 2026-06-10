@@ -1,0 +1,8 @@
+*.js text eol=lf
+*.json text eol=lf
+*.mcfunction text eol=lf
+*.md text eol=lf
+*.png binary
+*.mcaddon binary
+*.mcpack binary
+*.zip binary
